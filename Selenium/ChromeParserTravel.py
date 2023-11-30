@@ -42,7 +42,7 @@ try:
 
     data_array = np.array(data_array).reshape(len(data_array) // 4, 4)
 
-    df = pd.DataFrame(data_array, columns=['Город', "Регион", "Население", "Год переписи"]).set_index('col1').sort_values(
+    df = pd.DataFrame(data_array, columns=['Город', "Регион", "Население", "Год переписи"]).sort_values(
         by=['Год переписи', "Регион"])
 
 
